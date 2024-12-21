@@ -41,7 +41,7 @@ export const MenuScreen = () => {
                         </View>
                     </MyTouchableOpacity>
                 ))}
-                <MyTouchableOpacity>
+                <MyTouchableOpacity onPress={() => navigation.navigate('Cart' as never)}>
                     <View style={styles.cart}>
                         <CartIcon />
                     </View>

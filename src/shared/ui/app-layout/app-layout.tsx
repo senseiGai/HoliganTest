@@ -1,6 +1,6 @@
 import { SafeAreaView } from 'react-native-safe-area-context'
 import React from 'react'
-import { Header } from '../../../app/features/header/header'
+import { Header } from '../../../features/header/header'
 import { View } from 'react-native'
 
 interface Props {

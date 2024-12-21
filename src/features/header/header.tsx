@@ -1,13 +1,13 @@
 import { View } from 'react-native'
 import React from 'react'
 import { StyleSheet } from 'react-native'
+import MyTouchableOpacity from '../../shared/ui/my-touchable-opacity/my-touchable-opacity'
 import { useNavigation } from '@react-navigation/native'
-import MyTouchableOpacity from '../../../shared/ui/my-touchable-opacity/my-touchable-opacity'
 
-import MenuIcon from '../../../shared/icons/menu-icon'
-import BackIcon from '../../../shared/icons/back-icon'
-import MiniLogoIcon from '../../../shared/icons/mini-logo-icon'
-import MiniCartIcon from '../../../shared/icons/mini-cart-icon'
+import MenuIcon from '../../shared/icons/menu-icon'
+import BackIcon from '../../shared/icons/back-icon'
+import MiniLogoIcon from '../../shared/icons/mini-logo-icon'
+import MiniCartIcon from '../../shared/icons/mini-cart-icon'
 
 
 export const Header = () => {
