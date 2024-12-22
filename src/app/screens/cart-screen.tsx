@@ -27,8 +27,8 @@ export const CartScreen = () => {
                         <View style={{ marginTop: 64 }}><EmojiIcon /></View>
                     </View>
                 ) : (
-                    items.map((item) => (
-                        <View style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', marginBottom: 16 }}>
+                    items.map((item, index) => (
+                        <View key={index} style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', marginBottom: 16 }}>
                             <View style={styles.foodCard}>
                                 <View style={styles.container}>
                                     <Image
@@ -70,7 +70,7 @@ export const CartScreen = () => {
                 </View>
             ) : (
                 <View style={styles.footer}>
-                    <MyTouchableOpacity 
+                    <MyTouchableOpacity
                         style={styles.checkoutButton}
                         onPress={handleCheckout}
                     >
@@ -94,14 +94,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         width: '85%',
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.1,
-        shadowRadius: 4,
-        elevation: 3,
     },
     image: {
         width: '100%',
