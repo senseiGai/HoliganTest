@@ -13,7 +13,7 @@ import CartIcon from '../../shared/icons/cart-icon'
 const buttons = [
     { link: 'Store', label: 'МАГАЗИН' },
     { link: 'Booking', label: 'БРОНЬ' },
-    { link: 'Catalog', label: 'КАТАЛОГ' },
+    { link: 'Contact', label: 'КОНТАКТЫ' },
     { link: 'Events', label: 'СОБЫТИЯ РЕСТОРАНА' },
 ]
 
@@ -81,7 +81,14 @@ const styles = StyleSheet.create({
         height: 85,
         borderRadius: '100%',
         backgroundColor: '#FEB000',
-        marginTop: 44
+        marginTop: 42
+    },
+    bookingText: {
+        marginTop: 32,
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#4B018C',
+        textAlign: 'center'
     }
 
 })

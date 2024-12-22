@@ -9,13 +9,17 @@ import BackIcon from '../../shared/icons/back-icon'
 import MiniLogoIcon from '../../shared/icons/mini-logo-icon'
 import MiniCartIcon from '../../shared/icons/mini-cart-icon'
 
+interface IHeaderProps {
+    isBackground?: boolean
+}
 
-export const Header = () => {
+
+export const Header = ({ isBackground }: IHeaderProps) => {
     const navigation = useNavigation();
 
     return (
         <View style={styles.header}>
-            <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', backgroundColor: isBackground ? 'transparent' : '#FFFFFF', }}>
                 <MyTouchableOpacity onPress={() => navigation.navigate('Menu' as never)}>
                     <MenuIcon />
                 </MyTouchableOpacity>
@@ -39,7 +43,6 @@ export const Header = () => {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: '#FFFFFF',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
