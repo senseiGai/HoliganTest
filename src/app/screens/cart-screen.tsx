@@ -15,7 +15,9 @@ export const CartScreen = () => {
 
     const handleCheckout = () => {
         navigation.navigate('Success' as never)
-        clearCart()
+        setTimeout(() => {
+            clearCart()
+        }, 500)
     }
 
     return (
